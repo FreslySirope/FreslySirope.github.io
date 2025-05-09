@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Negocio Local</title>
+    <style>
+        body { 
+            font-family: 'Comic Sans MS', cursive, sans-serif; 
+            text-align: center; 
+            padding: 50px; 
+            background-color: #fffafc; 
+            margin: 0; 
+            transition: background-color 0.5s ease;
+        }
+        h1 { color: #ff69b4; } /* rosa */
+        h2 { color: #ff4d4d; } /* rojo */
+        p { color: #333; font-size: 18px; }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #32cd32; /* verde */
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 18px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            background-color: #228b22;
+        }
+        .pedido-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffcc00; /* amarillo */
+            color: #000;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 18px;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .pedido-btn:hover {
+            transform: scale(1.1);
+            background-color: #ffdb4d;
+        }
+        .comprar-btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #ff4d4d;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 16px;
+            margin-top: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .comprar-btn:hover {
+            transform: scale(1.1);
+            background-color: #e60000;
+        }
+        img { 
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 20px; 
+            margin-top: 20px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .catalogo {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            gap: 20px;
+        }
+        .producto {
+            background: #fff;
+            border-radius: 20px;
+            border: 3px solid #ff69b4;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 15px;
+            width: 200px;
+            transition: transform 0.3s ease;
+            color: #333;
+            position: relative;
+        }
+        .producto:hover {
+            transform: scale(1.05);
+        }
+        .producto img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin-top: 0;
+        }
+        .producto .precio {
+            color: #ff69b4;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .producto::after {
+            content: '✨';
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            font-size: 24px;
+        }
+        .mapa { 
+            margin-top: 40px; 
+            border: 5px solid #32cd32; 
+            border-radius: 20px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .testimonios { 
+            margin-top: 40px; 
+            background-color: #ffcc00; 
+            padding: 20px; 
+            border-radius: 20px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .testimonio-item { font-size: 16px; color: #000; margin: 10px 0; font-style: italic; }
+        .info-section { 
+            margin-top: 40px; 
+            background-color: #fff0f5; 
+            padding: 20px; 
+            border-radius: 20px; 
+            border: 3px dashed #ff69b4;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            animation: fadeIn 1s ease;
+        }
+        .info-section h2 { color: #ff4d4d; }
+        .info-section p { color: #333; font-size: 16px; }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+
+    <a class="btn" href="https://wa.me/1234567890" target="_blank">WhatsApp</a>
+
+    <h1>Bienvenido a Mi Negocio ✨</h1>
+    <p>Ofrecemos los mejores productos y servicios para ti. ¡Visítanos o contáctanos ahora!</p>
+
+    <div class="info-section">
+        <h2>🌸 Nuestra Misión</h2>
+        <p>Brindar productos y servicios de alta calidad que superen las expectativas de nuestros clientes, con un enfoque en la satisfacción y la confianza.</p>
+
+        <h2>🌟 Nuestra Visión</h2>
+        <p>Ser reconocidos como líderes en nuestro sector, creciendo de manera sostenible y generando un impacto positivo en nuestra comunidad.</p>
+
+        <h2>🎯 Nuestros Objetivos</h2>
+        <p>- Ampliar nuestra línea de productos.<br>
+           - Mejorar continuamente nuestro servicio al cliente.<br>
+           - Fortalecer nuestra presencia tanto local como en línea.</p>
+    </div>
+
+    <h2>🛍️ Catálogo de Productos</h2>
+    <div class="catalogo">
+        <div class="producto">
+            <img src="sirope normal.jpg" alt="Producto 1">
+            <div class="precio">$10.00</div>
+            <a class="comprar-btn" href="https://wa.me/1234567890?text=Hola%2C%20quiero%20comprar%20el%20Producto%201." target="_blank">Comprar</a>
+        </div>
+        <div class="producto">
+            <img src="https://via.placeholder.com/300x200" alt="Producto 2">
+            <div class="precio">$15.00</div>
+            <a class="comprar-btn" href="https://wa.me/1234567890?text=Hola%2C%20quiero%20comprar%20el%20Producto%202." target="_blank">Comprar</a>
+        </div>
+        <div class="producto">
+            <img src="https://via.placeholder.com/300x200" alt="Producto 3">
+            <div class="precio">$20.00</div>
+            <a class="comprar-btn" href="https://wa.me/1234567890?text=Hola%2C%20quiero%20comprar%20el%20Producto%203." target="_blank">Comprar</a>
+        </div>
+    </div>
+
+    <a class="pedido-btn" href="https://wa.me/1234567890?text=Hola%2C%20quiero%20hacer%20un%20pedido%20por%20favor." target="_blank">Hacer Pedido ✨</a>
+
+    <h2>💖 Opiniones de Nuestros Clientes</h2>
+    <div class="testimonios">
+        <div class="testimonio-item">"Excelente servicio y productos de calidad. ¡Recomendado!" - Juan P.</div>
+        <div class="testimonio-item">"Muy satisfecho con mi compra, volveré pronto." - María G.</div>
+        <div class="testimonio-item">"Atención rápida y amable, todo perfecto." - Carlos L.</div>
+    </div>
+
+    <h2>📍 Encuéntranos aquí</h2>
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086682709725!2d-122.41941508468065!3d37.77492977975926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085816f0f9f3c7d%3A0x0!2zMzfCsDQ2JzMwLjgiTiAxMjLCsDI1JzA3LjkiVw!5e0!3m2!1ses!2sus!4v1618337410412!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+</body>
+</html>
