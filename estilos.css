@@ -1,10 +1,12 @@
+/* =========================
+   ESTILOS GENERALES
+========================= */
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     padding: 50px;
     background-color: #fffafc;
     margin: 0;
-    transition: background-color 0.5s ease;
 }
 
 h1 { color: #ff69b4; }
@@ -16,6 +18,17 @@ p {
     font-size: 18px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   BOTONES
+========================= */
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -72,14 +85,9 @@ p {
     background-color: #e60000;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 20px;
-    margin-top: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
+/* =========================
+   CATÁLOGO DE PRODUCTOS
+========================= */
 .catalogo {
     display: flex;
     justify-content: center;
@@ -126,13 +134,9 @@ img {
     font-size: 24px;
 }
 
-.mapa {
-    margin-top: 40px;
-    border: 5px solid #32cd32;
-    border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
+/* =========================
+   TESTIMONIOS
+========================= */
 .testimonios {
     margin-top: 40px;
     background-color: #ffcc00;
@@ -148,6 +152,9 @@ img {
     font-style: italic;
 }
 
+/* =========================
+   INFORMACIÓN EXTRA
+========================= */
 .info-section {
     margin-top: 40px;
     background-color: #fff0f5;
@@ -167,17 +174,110 @@ img {
     font-size: 16px;
 }
 
+/* =========================
+   REDES SOCIALES
+========================= */
+.redes-sociales {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ff69b4;
+    background-color: #fff0f5;
+    padding: 10px 15px;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.redes-sociales a:hover {
+    transform: scale(1.1);
+    background-color: #ffe4ec;
+}
+
+/* =========================
+   VIDEO
+========================= */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    padding: 10px;
+    background-color: #fff0f5;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* =========================
+   MAPA
+========================= */
+.mapa {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    border: 5px solid #32cd32;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   LOGO
+========================= */
+.logo-container {
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease;
+}
+
+.logo {
+    max-width: 180px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   PIE DE PÁGINA
+========================= */
 footer {
     margin-top: 50px;
     font-size: 14px;
     color: #aaa;
 }
 
+/* =========================
+   ANIMACIONES
+========================= */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
+/* =========================
+   MEDIA QUERIES
+========================= */
 @media (max-width: 768px) {
     .btn {
         position: static;
@@ -194,12 +294,12 @@ footer {
         height: 300px;
     }
 }
+
 @media (max-width: 480px) {
     body {
         padding: 20px;
     }
-}
-@media (max-width: 480px) {
+
     h1, h2 {
         font-size: 22px;
     }
@@ -212,19 +312,7 @@ footer {
         font-size: 16px;
         padding: 8px 16px;
     }
-}
-.logo-container {
-    margin-bottom: 20px;
-    animation: fadeIn 1s ease;
-}
 
-.logo {
-    max-width: 180px;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-@media (max-width: 480px) {
     .logo {
         max-width: 120px;
     }
