@@ -319,20 +319,55 @@ footer {
 }
 
 .promocion {
-  border: 3px dashed #ffcc00;
-  background-color: #ffeb3b;
-  position: relative;
-  padding: 20px;
+    border: 3px dashed #ffcc00;
+    background-color: #fffbe6;
+    position: relative;
 }
+
 .etiqueta-promocion {
-  position: absolute;
-  top: -12px;
-  left: -12px;
-  background-color: #ffcc00;
-  color: #000;
-  padding: 5px 10px;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 15px;
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    background-color: #ffcc00;
+    color: #000;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.precio-anterior {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 20px;
 }
 
